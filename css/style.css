@@ -1,0 +1,133 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+.head{
+  margin: 0;
+  padding: 25px;
+  border-bottom: black solid 2px;
+}
+.head a{
+  display: inline;
+  margin-left: 75px;
+  padding: 30px;
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  font-size: 14px;
+}
+.fone p{
+  font-style: italic;
+  border: white solid;
+  width: 330px;
+  transform: translateX(576px);
+  padding: 20px;
+  color: white;
+}
+.fone a{
+  margin-top: 35px;
+}
+.fone{
+  background-image: url(../img/ozero.jpg );
+  height: 400px;
+  text-align: center;
+}
+.fone h1{
+  padding:50px;
+  color: white;
+}
+img{
+  height: 250px;
+  width: 250px;
+}
+.all-items{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 10px;
+  padding-bottom: 100px;
+}
+.all-blocks p{
+  margin-top:10px;
+}
+.all-blocks h3{
+  margin-top: 20px;
+}
+.text h2{
+  display: block;
+  text-align: center;
+  padding: 20px
+}
+.all-blocks img{
+  height: 205px;
+  width: 225px;
+  box-shadow:0 8px 15px black;  
+}
+.all-blocks button{
+    background-color:transparent;
+    padding: 5px;
+    margin: 2px
+}
+.all-blocks img:hover{
+  transform: translateY(-7px);
+}
+/* кнопки */
+.floating-button {
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 20px;
+  padding: 10px 30px;
+  position: relative;
+  border: 2px solid black;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  transition: .4s;
+}
+.floating-button:after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border: 2px solid rgba(0, 0, 0, 0);
+  transition: .4s;
+}
+.floating-button:hover:after{
+  border-color: black;
+  width: calc(100% - 10px);
+  height: calc(100% + 10px);
+}
+.double-border-button {
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 20px;
+  padding: 10px 30px;
+  position: relative;
+  border: 2px solid white;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  transition: .4s;
+}
+.double-border-button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border: 2px solid rgba(0, 0, 0, 0);
+  transition: .4s;
+}
+.double-border-button:hover:after {
+  border-color: white;
+  width: calc(100% - 10px);
+  height: calc(100% + 10px);
+}
